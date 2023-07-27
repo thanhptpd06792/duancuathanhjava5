@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>CATEGORY MANAGERMENTS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Link fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <section class="form mt-3 my-4">
+            <div class="head pb-5 ">
+                <div class="container py-5 ">
+                    <div class="card">
+                        <div class="col">
+                            <div class="col-6 offset-3 mt-2">
+                                <h2 class="font-weight-light text-center py-2">CATEGORY MANAGERMENTS</h2>
+                                <ul class="nav nav-tabs pt-3" id="myTab" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" id="categoryEditing-tab" data-toggle="tab" href="#categoryEditing" role="tab" aria-controls="categoryEditing" aria-selected="true">CategoryEditing</a></li>
+
+                                    <li class="nav-item"><a class="nav-link" id="categoryList-tab" data-toggle="tab" href="#categoryList" role="tab" aria-controls="categoryList" aria-selected="false">Category List</a></li>
+                                </ul>
+                                <div class="tab-content pb-5" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="categoryEditing" role="tabpanel" aria-labelledby="categoryEditing-tab">
+                                        <form action="" method="post" enctype="multipart/form-data">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="col-9">
+                                                        <div class="form-group">
+                                                            <label for="categoryId">Category ID</label> <input type="text" class="form-control" name="categoryId" id="categoryId" value="" aria-describedby="categoryHelpId" placeholder="Category ID">
+                                                            <small id="categoryHelpId" class="form-text text-muted">Category ID is required</small>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="name">Name Category</label> <input type="text" class="form-control" name="name" id="name" value="" aria-describedby="nameHeplId" placeholder="Name category">
+                                                            <small id="nameHeplId" class="form-text text-muted">Name category required !</small>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <label for="description">Description</label>
+                                                        <textarea name="description" id="description" cols="30" rows="2" class="form-control"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer text-muted text-center">
+                                                    <button class="btn btn-primary" formaction="">Create</button>
+                                                    <button class="btn btn-warning" formaction="">Update</button>
+                                                    <button class="btn btn-danger" formaction="">Delete</button>
+                                                    <button class="btn btn-info" formaction="">Reset</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="categoryList" role="tabpanel" aria-labelledby="categoryList-tab">
+                                        <table class="table table-strip">
+                                            <tr>
+                                                <td>Category ID</td>
+                                                <td>Name category</td>
+                                                <td>Description</td>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>LH001</td>
+                                                <td>Áo thun</td>
+                                                <td>Full size</td>
+                                                <td>
+                                                    <a href=""><i class="fa fa-edit" aria-hidden="true"></i>Edit</a>
+                                                    <a href=""><i class="fa fa-trash" aria-hidden="true"></i>Delete</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div class="card-footer text-muted text-center">
+                                            <nav aria-label="Page navigation">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                            <span class="sr-only">Previous</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item active">
+                                                        <a class="page-link" href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">2</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                            <span class="sr-only">Next</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .head {
+            background-image: url('/images/bg2.jpg');
+            background-size: 100% 100%;
+            border-radius: 5px;
+        }
+        
+        .row1 {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 1px 10px 22px gray;
+        }
+    </style>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

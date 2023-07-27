@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\Front-end\\Asm"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Asm-GĐ1"
+    }
+}
